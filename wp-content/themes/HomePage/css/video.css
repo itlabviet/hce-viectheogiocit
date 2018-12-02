@@ -1,0 +1,250 @@
+
+.video-wrapper {
+	width: 850px;
+	height: auto;
+	    margin: 55px auto 0;
+margin-bottom: 360px;
+}
+
+/* video container */
+.video-container {
+	line-height: 0px; /* Removes extra pixels from video-container*/
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	color: #ccc;
+	margin: auto 0;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-top: 250px;
+}
+
+.video-container:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 6;
+	pointer-events: none;
+}
+
+.FirstBtn {
+
+	background: url('http://di7.laurpojad.com/newton/img/PlayButton.png') no-repeat;
+	background-size: 140px;
+	background-position: 50% ;
+	position: absolute;
+	 top: 250px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	cursor: pointer;
+}
+
+.FirstBtn:hover {
+	-webkit-filter: invert(1);
+ 	filter: invert(1);
+}
+
+/*** VIDEO CONTROLS CSS ***/
+/* control holder */
+.control {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	margin: 0 auto;
+	z-index: 2147483647;
+	display: none;
+	background: rgba(0,0,0,0.5);
+}
+
+/* control bottom part */
+.btmControl {
+	clear: both;
+	height: 40px;
+}
+
+.control .btnPlay,
+.control .sound,
+.control .btnFS,
+.current,
+.duration {
+	position: absolute;
+	height: 100%;
+	border: 1px solid rgba(255,255,255,0.2);
+	border-top: none;
+	border-bottom: none;
+}
+
+.control .btnPlay {
+	left: 0;
+	width: 6.25%; /* 45px */
+	max-width: 45px;
+	padding: 6px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.control .icon-play {
+	background: url('http://di7.laurpojad.com/newton/img/vp_sprite.png') no-repeat -11px 0;
+	width: 6px;
+	height: 9px;
+	display: block;
+	margin: 8px 0 0 12px;
+}
+
+.control .icon-pause {
+	background: url('http://di7.laurpojad.com/newton/img/vp_sprite.png') no-repeat -34px -1px;
+	width: 8px;
+	height: 9px;
+	display: block;
+	margin: 8px 0 0 12px;
+}
+
+.control .sound {
+	width: 6.25%; /* 45px */
+	max-width: 45px;
+	right: 45px;
+	border-left: none;
+	cursor: pointer;
+}
+
+.control .icon-sound {  
+	background: url('http://di7.laurpojad.com/newton/img/vp_sprite.png') no-repeat -19px 0;
+	width: 13px;
+	height: 10px;
+	display: block;
+	margin: 14px 0 0 15px;
+}
+
+.control .muted .icon-sound {
+	width: 7px !important;
+}
+
+.control .btnFS {
+	width: 6.25%; /* 45px */
+	max-width: 45px;
+	right: 0;
+	border-left: none;
+	cursor: pointer;
+}
+
+.control .icon-fullscreen {  
+	background: url('http://di7.laurpojad.com/newton/img/vp_sprite.png') no-repeat 0 0;
+	width: 10px;
+	height: 10px;
+	display: block;
+	margin: 14px 0 0 17px;
+}
+
+/* TIME LAYOUT */
+.current,
+.duration {
+	width: 60px; /* 60px */
+	padding-top: 14px;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	line-height: 1;
+}
+
+.current {
+	border-left: none;
+	left: 45px;
+	z-index: 1;
+}
+
+.duration {
+	right: 90px;
+}
+
+/* PROGRESS BAR CSS */
+/* Progress bar */
+.progress-bar {
+	position: absolute;
+	height: 100%;
+	border: 1px solid rgba(255,255,255,0.2);
+	padding: 15px 165px 15px 120px;
+	border-left: none;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	border-right: none;
+}
+
+.progress {
+	width: 100%;
+	height: 7px;
+	position: relative;
+	cursor: pointer;
+	background: rgba(0,0,0,0.4); /* fallback */
+	box-shadow: 0 1px 0 rgba(255,255,255,0.1), inset 0 1px 1px rgba(0,0,0,1);
+}
+
+.progress span {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+}
+
+.timeBar {
+	z-index: 10;
+	width: 0;
+	background-color: #6BCCE2;
+	background: -webkit-linear-gradient(top, rgba(107,204,226,1) 0%,rgba(29,163,208,1) 100%);
+	background: linear-gradient(to bottom, rgba(107,204,226,1) 0%,rgba(29,163,208,1) 100%);
+	background: -o-linear-gradient(top, rgba(107,204,226,1) 0%,rgba(29,163,208,1) 100%);
+	background: -moz-linear-gradient(top, rgba(107,204,226,1) 0%,rgba(29,163,208,1) 100%);
+	box-shadow: 0 0 7px rgba(107,204,226,.5);
+}
+
+.bufferBar {
+	z-index: 5;
+	width: 0;
+	background: rgba(255,255,255,0.2);
+}
+
+/* VOLUME BAR CSS */
+/* volume bar */
+.volume {
+	position: relative;
+	cursor: pointer;
+	width: 70px;
+	height: 10px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.volumeBar {
+	display: block;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #eee;
+	z-index: 10;
+}
+
+
+/* FULLSCREEN STYLES */
+
+video::-webkit-media-controls {
+	display:none !important;
+}
+
+video::-webkit-media-controls-enclosure {
+	display:none !important;
+}
+
