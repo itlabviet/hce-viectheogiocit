@@ -4,18 +4,18 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Việc làm theo giờ</title>
-	<link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+	<link href="<?php echo get_stylesheet_directory_uri() ?>/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
 	<!-- font -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-	  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	  <link href="<?php echo get_stylesheet_directory_uri() ?>/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<!-- Google Fonts -->
   	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
   	<!-- css -->
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/css/bootstrap.min.css">
 	<link href="images/icon.jpg" rel="icon">
-	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/css/css.css">
 
 </head>
 
@@ -58,7 +58,7 @@
 				<div class="container">
 					<nav class="navbar fixed-top navbar-expand-lg navbar-light">
 
-					  <a class="navbar-brand" href="#"><img src="images/C-IT.jpg" width="100" height="60" alt=""></a>
+					  <a class="navbar-brand" href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/C-IT.jpg" width="100" height="60" alt=""></a>
 					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					    <span class="navbar-toggler-icon"></span>
 					  </button>
@@ -125,13 +125,13 @@
 				  </ol>
 				  <div class="carousel-inner">
 				    <div class="carousel-item active">
-				      <img class="d-block w-100" src="images/carousel/1.jpg" alt="First slide">
+				      <img class="d-block w-100" src="<?php echo get_stylesheet_directory_uri() ?>/images/carousel/1.jpg" alt="First slide">
 				    </div>
 				    <div class="carousel-item">
-				      <img class="d-block w-100" src="images/carousel/2.jpg" alt="Second slide">
+				      <img class="d-block w-100" src="<?php echo get_stylesheet_directory_uri() ?>/images/carousel/2.jpg" alt="Second slide">
 				    </div>
 				    <div class="carousel-item">
-				      <img class="d-block w-100" src="images/carousel/3.jpg" alt="Third slide">
+				      <img class="d-block w-100" src="<?php echo get_stylesheet_directory_uri() ?>/images/carousel/3.jpg" alt="Third slide">
 				    </div>
 				  </div>
 				  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -157,7 +157,7 @@
 		  	<div class="container">
 		  		<div class="row">
 		  			<div class="col img_intro">
-		  				<img src="images/C-IT.jpg">
+		  				<img src="<?php echo get_stylesheet_directory_uri() ?>/images/C-IT.jpg">
 		  			</div>
 		  			<div class="col cont_intro">
 			            <h2>Dự án C-IT</h2>
