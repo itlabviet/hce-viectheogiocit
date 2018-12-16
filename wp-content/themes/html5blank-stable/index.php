@@ -102,6 +102,15 @@
 		        </div>
 		  	</div>
 		  </section>
+		  
+		  <section id="video">
+		  	
+		  </section>
+
+		  <section id="">
+		  	
+		  </section>
+
 	</main>
 <!-- <===========/////End Main=======> -->
 <?php get_footer(); ?>
