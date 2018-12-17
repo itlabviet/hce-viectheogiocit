@@ -16,6 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/css/bootstrap.min.css">
 	<link href="<?php echo get_stylesheet_directory_uri() ?>/images/icon.jpg" rel="icon">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/css/css.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/css/respon.css">
 
 </head>
 

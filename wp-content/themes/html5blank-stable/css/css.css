@@ -4,7 +4,7 @@
 body{
 	font-family: "Proxima Nova",Times New Roman, Times, serif !important;
 }
-/*///////head*/
+/*================Header===================*/
 #header {
     background: white;
     width: 100%;
@@ -22,6 +22,7 @@ body{
 }
 #top_header .utility {
     display: flex;
+    font-size: 1.2vw;
 }
 
 #top_header .h_phone{
@@ -36,6 +37,7 @@ body{
   padding-left: 5px;  
 }
 
+/*========Menu=============*/
 #menu_fix {
   background-color: white;
 }
@@ -45,39 +47,46 @@ body{
   background-color: white;
 }
 
+#menu_fix .nav-item a {
+    font-size: 1.8vw;
+}
+
+/*=====================Main===================*/
 #main{
 
 }
+/*==========Carousel===========*/
+
 #car_main{
-
-}
-#car_main .carousel{
-  width: auto;
-  left: auto;
-  right: 0;
-  position: absolute;
-  top: 84px;
+  margin-top: 100px;
 }
 
-#car_main .t_main{
-  text-align: center;
+#car_main .slide{
   position: relative;
-  top: 280px;
-  margin-left: -10px;
+  text-align: center;
 }
 
-#car_main .t_main span{
+.slide .t_main{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slide .t_main span{
     color: #0059a9;
     margin-bottom: 30px;
-    font-size: 70px;
-    font-weight: 700;
+    font-size: 6vw;
+    font-weight: 600;
 }
- .t_main span span{
+.t_main span span{
     color: #ffd035 !important;
 }
     
+/*==============Introduce======*/
 #intro{
-    margin-top: calc(40%);
+    margin-top: 30px;
+    padding-top: 30px;
 }
 
 .img_intro img{
@@ -112,6 +121,8 @@ body{
     color: #ffd035;
 }
 
+
+/*===========Services=========*/
 #services{
 
 }

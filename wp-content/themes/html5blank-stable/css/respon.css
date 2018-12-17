@@ -1,0 +1,51 @@
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px){
+	#formButton {
+    display: none;
+	}
+}
+
+@media (max-width: 1199px)
+{
+
+	#menu_fix .nav-item a {
+    font-size: 100%;
+	}
+
+	 #formButton {
+    border: 0.5px solid blue;
+    border-radius: 3px;
+    color: white;
+    font-size: 20px;
+    background-color: #0d5891;
+	}
+
+	#formButton span{
+		font-size: 4vw;
+		font-weight: normal;
+	}
+
+	#form1 {
+    display: none;
+	}
+
+	#top_header .utility {
+    font-size: 15px;
+	}
+
+	#services .box {
+		height: 250px;
+	}
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { ... }
+@media (min-width: 992px) { ... }
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { ... }
+@media (min-width: 768px) { ... }
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { ... }
+@media (min-width: 576px) { ... }
