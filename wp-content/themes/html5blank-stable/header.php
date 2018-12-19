@@ -3,14 +3,23 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>Việc làm theo giờ</title>
+
 	<link href="<?php echo get_stylesheet_directory_uri() ?>/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
 	<!-- font -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-	  <link href="<?php echo get_stylesheet_directory_uri() ?>/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+  	<link href="<?php echo get_stylesheet_directory_uri() ?>/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
 	<!-- Google Fonts -->
   	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+  	<!-- Slick slide -->
+  	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/lib/slick/slick.css">
+  	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/lib/slick/slick-theme.css">
   	<!-- css -->
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/css/bootstrap.min.css">

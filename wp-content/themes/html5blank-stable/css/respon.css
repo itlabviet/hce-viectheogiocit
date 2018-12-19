@@ -1,12 +1,13 @@
 
 /*// Extra large devices (large desktops, 1200px and up)*/
+/*xl*/
 @media (min-width: 1200px){
 	#formButton {
     display: none;
 	}
 }
 
-@media (max-width: 1199px)
+@media (max-width: 1199.98px)
 {
 
 	#menu_fix .nav-item a {
@@ -34,18 +35,84 @@
     font-size: 15px;
 	}
 
+	#services .box h4,#services .box p {
+    margin-left: 10px;
+	}
 	#services .box {
-		height: 250px;
+    padding: 15px;
+    margin-bottom: 20px;
 	}
 }
 
 /*// Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) { ... }
-@media (min-width: 992px) { ... }
+/*lg*/
+
+
+@media (max-width: 991.98px) {
+
+	#staff .con_imgstaff{
+
+	}
+
+	.con_imgstaff .text_cistaff{
+		height: 100px;
+		overflow: hidden;
+	}
+
+	#staff .con_imgstaff h5{
+    	font-weight: bold;
+	}
+	#staff .con_imgstaff p{
+    	font-size: 10px ;
+    	font-weight: italic;
+	}
+
+
+	.img_intro img {
+    width: 35%;
+	}
+ 
+}
 
 /*// Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) { ... }
-@media (min-width: 768px) { ... }
+ /*md*/
+
+@media (max-width: 767.98px) {
+	#services .box h4,#services .box p {
+    	margin-left: 30px;
+
+	}
+	#services .box h4{
+		font-size: 30px;
+	}
+	#services .box p{
+		font-size: 20px;
+	}
+
+
+	.img_intro img {
+    width: 15%;
+	}
+}
+
+
 /*// Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { ... }
-@media (min-width: 576px) { ... }
+/*sm*/
+@media (max-width: 575.98px) {
+	#staff .img_staff
+	{
+		width: 50%;
+    	float: left;
+    	padding: 15px;
+
+	}
+
+	#staff .img_staff img{
+		height: 150px;
+	}
+	
+}
+
+
+
+	
