@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html <?php language_attributes(); ?> class="no-js">
 <head>
-	<meta charset="utf-8">
+	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Việc làm theo giờ</title>
+	<title>
+		<?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?>
+	</title>
 
 	<link href="<?php echo get_stylesheet_directory_uri() ?>/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
 
@@ -27,9 +29,19 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/css/css.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/css/respon.css">
 
-</head>
+	<?php wp_head(); ?>
+		<script>
+        // conditionizr.com
+        // configure environment tests
+        conditionizr.config({
+            assets: '<?php echo get_template_directory_uri(); ?>',
+            tests: {}
+        });
+        </script>
 
-<body>
+</head>
+		
+<body <?php body_class(); ?>>
 <!-- <===========Header=======> -->
 	<header id="header">
 		<!-- Top header -->
@@ -75,7 +87,7 @@
 
 					  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 					    <ul class="navbar-nav mr-auto">
-					      <li class="nav-item active">
+					      <!-- <li class="nav-item active">
 					        <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
 					      </li>
 					      <li class="nav-item">
@@ -95,7 +107,17 @@
 					      </li>
 					      <li class="nav-item">
 					        <a class="nav-link" href="#">Đăng nhập</a>
-					      </li>
+					      </li> -->
+					    <?php  
+							$menu_items = wp_get_nav_menu_items("Main menu");
+							// thiếu active menu
+							foreach ($menu_items as $menu) {
+							?>
+							<li class="nav-item" <?php echo "active" ?> >
+					        	<a class="nav-link" href="<?php echo $menu->url ?>"><?php echo $menu->title ?><span class="sr-only">(current)</span></a>
+					      	</li>	
+						<?php } ?> 
+
 					     <!--  <li class="nav-item dropdown">
 					        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					          Dropdown

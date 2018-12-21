@@ -25,8 +25,9 @@ body{
     font-size: 1.2vw;
 }
 
-#top_header .h_phone{
-
+#top_header .h_phone a{
+  font-size: 15px;
+    margin-top: -5px;
 }
 #top_header .h_social{
   flex: 1;

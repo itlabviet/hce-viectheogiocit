@@ -2,55 +2,57 @@
 ?>
 <!-- <===========Main=======> -->
 	<main id="main">
+
 		<section id="car_main">
 
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
-			<ol class="carousel-indicators">
-			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			</ol>
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				</ol>
 
-			<div class="carousel-inner">
-			<div class="carousel-item active">
-			<img class="d-block w-100" src="<?php echo get_stylesheet_directory_uri() ?>/images/carousel/1.jpg" alt="First slide">
-			</div>
-			<div class="carousel-item">
-			<img class="d-block w-100" src="<?php echo get_stylesheet_directory_uri() ?>/images/carousel/2.jpg" alt="Second slide">
-			</div>
-			<div class="carousel-item">
-			<img class="d-block w-100" src="<?php echo get_stylesheet_directory_uri() ?>/images/carousel/3.jpg" alt="Third slide">
-			</div>
-			</div>
-			<a class="carousel-control-prev" style="z-index: 99;" href="#carouselExampleIndicators" role="button" data-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-			</a>
-
-			<a class="carousel-control-next" style="z-index:99;" href="#carouselExampleIndicators" role="button" data-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-			</a>
-
-			<div class="t_main">
-				<span> Việc làm <span>theo giờ<span> </span>
-
-				<button  type="button" id="formButton"><span> Chọn để hiển thị </span> </button>
-
-				<div class="row" id="form1">
-
-					<div class="col-xl">
-						<button type="button" class="btn btn-primary btn-block">Tuyển giúp việc theo giờ</button>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+					<img class="d-block w-100" src="<?php echo get_stylesheet_directory_uri() ?>/images/carousel/1.jpg" alt="First slide">
 					</div>
-					<div class="col-xl">
-						<button type="button" class="btn btn-secondary btn-block">Tìm việc làm</button>
+					<div class="carousel-item">
+					<img class="d-block w-100" src="<?php echo get_stylesheet_directory_uri() ?>/images/carousel/2.jpg" alt="Second slide">
 					</div>
-					<div class="col-xl">
-						<button type="button" class="btn btn-primary btn-block">Tuyển lao động thời vụ</button>		
-					</div>		
-
+					<div class="carousel-item">
+					<img class="d-block w-100" src="<?php echo get_stylesheet_directory_uri() ?>/images/carousel/3.jpg" alt="Third slide">
+					</div>
 				</div>
+
+				<a class="carousel-control-prev" style="z-index: 99;" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+				</a>
+
+				<a class="carousel-control-next" style="z-index:99;" href="#carouselExampleIndicators" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+
+				<div class="t_main">
+					<span> Việc làm <span>theo giờ<span> </span>
+
+					<button  type="button" id="formButton"><span> Chọn để hiển thị </span> </button>
+
+					<div class="row" id="form1">
+
+						<div class="col-xl">
+							<button type="button" class="btn btn-primary btn-block">Tuyển giúp việc theo giờ</button>
+						</div>
+						<div class="col-xl">
+							<button type="button" class="btn btn-secondary btn-block">Tìm việc làm</button>
+						</div>
+						<div class="col-xl">
+							<button type="button" class="btn btn-primary btn-block">Tuyển lao động thời vụ</button>		
+						</div>		
+
+					</div>
 				</div>
 
 			</div>
@@ -76,6 +78,7 @@
 					</div>
 				</div>
 			</div>
+
 		</section>
 
 		<section id="services">
@@ -214,6 +217,8 @@
 
 			</div>
 		</section>
+
+		
 
 	</main>
 <!-- <===========/////End Main=======> -->
