@@ -8,26 +8,26 @@
 		<?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?>
 	</title>
 
-	<link href="<?php echo get_stylesheet_directory_uri() ?>/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+	<link href="<?php echo get_stylesheet_directory_uri() ?>/assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
 
 	<!-- font -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
-  	<link href="<?php echo get_stylesheet_directory_uri() ?>/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  	<link href="<?php echo get_stylesheet_directory_uri() ?>/assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
 	<!-- Google Fonts -->
   	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
   	<!-- Slick slide -->
-  	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/lib/slick/slick.css">
-  	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/lib/slick/slick-theme.css">
+  	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/assets/lib/slick/slick.css">
+  	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/assets/lib/slick/slick-theme.css">
   	<!-- css -->
-	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/css/bootstrap.min.css">
-	<link href="<?php echo get_stylesheet_directory_uri() ?>/images/icon.jpg" rel="icon">
-	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/css/css.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/css/respon.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/assets/css/bootstrap.min.css">
+	<link href="<?php echo get_stylesheet_directory_uri() ?>/assets/images/icon.jpg" rel="icon">
+	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/assets/css/css.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/assets/css/respon.css">
 
 	<?php wp_head(); ?>
 		<script>
@@ -80,7 +80,7 @@
 				<div class="container">
 					<nav class="navbar fixed-top navbar-expand-lg navbar-light">
 
-					  <a class="navbar-brand" href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/C-IT.jpg" width="100" height="60" alt=""></a>
+					  <a class="navbar-brand" href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/C-IT.jpg" width="100" height="60" alt=""></a>
 					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					    <span class="navbar-toggler-icon"></span>
 					  </button>
