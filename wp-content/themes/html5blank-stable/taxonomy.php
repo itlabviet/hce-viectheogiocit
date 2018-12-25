@@ -4,7 +4,7 @@
 		<!-- section -->
 		<section>
 
-			<h1><?php _e( 'Archives-post', 'html5blank' ); ?></h1>
+			<h1><?php _e( 'Taxonomy', 'html5blank' ); ?></h1>
 
 			<?php get_template_part('loop'); ?>
 

@@ -11,7 +11,11 @@
 {
 
 	#menu_fix .nav-item a {
-    font-size: 100%;
+    font-size: 17px;
+	}
+
+	#intro .cont_intro ul {
+    font-size: 20px;
 	}
 
 	 #formButton {
@@ -37,10 +41,14 @@
 
 	#services .box h4,#services .box p {
     margin-left: 10px;
+    font-size: 20px;
 	}
 	#services .box {
     padding: 15px;
     margin-bottom: 20px;
+	}
+	#staff .text_cistaff{
+		font-size: 15px;
 	}
 }
 
@@ -61,7 +69,9 @@
 
 	#staff .con_imgstaff h5{
     	font-weight: bold;
+	    font-size: 1.5rem;
 	}
+
 	#staff .con_imgstaff p{
     	font-size: 10px ;
     	font-weight: italic;
@@ -69,7 +79,7 @@
 
 
 	.img_intro img {
-    width: 35%;
+    width: 50%;
 	}
  
 }
@@ -89,10 +99,6 @@
 		font-size: 20px;
 	}
 
-
-	.img_intro img {
-    width: 15%;
-	}
 }
 
 
@@ -111,6 +117,27 @@
 		height: 150px;
 	}
 	
+	#staff .img_staff .card {
+    padding: 15px;
+	}
+}
+
+/*320px smallest device: iphone 5*/
+@media (max-width: 350px){
+	#staff .img_staff
+	{
+		width: 100%;
+		padding: auto;
+
+	}
+
+	#staff .con_imgstaff h5{
+	    font-size: 2.25rem;
+	}
+
+	#staff .con_imgstaff p{
+    	font-size: 20px ;
+	}
 }
 
 

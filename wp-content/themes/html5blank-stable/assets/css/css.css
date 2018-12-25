@@ -24,7 +24,9 @@ body{
     display: flex;
     font-size: 1.2vw;
 }
-
+#top_header .utility a{
+    color: #007bff;
+}
 #top_header .h_phone a{
   font-size: 15px;
     margin-top: -5px;
@@ -37,6 +39,8 @@ body{
 #top_header .h_social a{
   padding-left: 5px;  
 }
+
+
 
 /*========Menu=============*/
 #menu_fix {
@@ -52,9 +56,22 @@ body{
     font-size: 1.5vw;
 }
 
+#menu_fix .form-control,#menu_fix .btn  {
+    font-size: 2rem;
+}
+
+#menu_fix li{
+  padding-left: 10px;
+}
+
+
 /*=====================Main===================*/
 #main{
 
+}
+
+#main .btn{
+   font-size: 2rem;
 }
 /*==========Carousel===========*/
 
@@ -90,6 +107,7 @@ body{
     padding-top: 30px;
 }
 
+
 .img_intro{
   text-align: center;
 }
@@ -106,6 +124,9 @@ body{
   text-align: center;
 
 }
+.cont_intro ul{
+  font-size: 1.5vw;
+}
 .cont_intro h2 {
     color: #0c2e8a;
     font-weight: 700;
@@ -121,7 +142,6 @@ body{
 }
 
 .cont_intro i {
-    font-size: 20px;
     padding-right: 4px;
     color: #ffd035;
 }
@@ -264,6 +284,7 @@ body{
 
 .con_imgstaff h5{
     margin-top: 10px;
+    font-size: 2rem;
 }
 
 .con_imgstaff .title {
