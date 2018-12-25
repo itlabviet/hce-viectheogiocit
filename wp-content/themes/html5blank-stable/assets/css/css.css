@@ -332,3 +332,29 @@ footer .copyright a{
   background-color: blue;
 }
 
+/*==========Pagination========*/
+.pagination a, .pagination span {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+    border-radius: 5px;
+}
+
+.pagination span{
+  background-color: rgba(37,66,117,.9);
+  color: white;
+  border: 1px solid rgba(37,66,117,.9);;
+}
+
+/*============Post taxonomy=====*/
+.entry{
+  font-size: 13px;
+  text-transform: none;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #dfdfdf;
+  margin-bottom: 10px;
+}

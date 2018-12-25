@@ -26,8 +26,17 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/assets/css/bootstrap.min.css">
 	<link href="<?php echo get_stylesheet_directory_uri() ?>/assets/images/icon.jpg" rel="icon">
+
+	<!-- Css home -->
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/assets/css/css.css">
+
+	<!-- Css parttime -->
+	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/assets/css/css-parttime.css">
+
+	<!-- Responsive -->
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/assets/css/respon.css">
+
+
 
 	<?php wp_head(); ?>
 		<script>
@@ -80,7 +89,7 @@
 				<div class="container">
 					<nav class="navbar fixed-top navbar-expand-lg navbar-light">
 
-					  <a class="navbar-brand" href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/C-IT.jpg" width="100" height="60" alt=""></a>
+					  <a class="navbar-brand" href="<?php echo get_settings('home'); ?>"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/C-IT.jpg" width="100" height="60" alt=""></a>
 					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					    <span class="navbar-toggler-icon"></span>
 					  </button>

@@ -63,3 +63,41 @@ function custom_post_type() {
  
 add_action( 'init', 'custom_post_type', 0 );
 
+// filer title-limit WordPress title length
+function the_titlesmall($before = '', $after = '', $echo = true, $length = false) { $title = get_the_title();
+    if( strlen($title) <= $length )
+         $after = '';
+    if ( $length && is_numeric($length) ) {
+        $title = substr( $title, 0, $length );
+    }
+
+    if ( strlen($title)> 0 ) {
+        $title = apply_filters('the_titlesmall', $before . $title . $after, $before, $after);
+        if ( $echo )
+            echo $title;
+        else
+            return $title;
+    }
+
+}
+
+
+// pagination
+function pagination_bar( $custom_query ) {
+
+    $total_pages = $custom_query->max_num_pages;
+    $big = 999999999; // need an unlikely integer
+
+    if ($total_pages > 1){
+        $current_page = max(1, get_query_var('paged'));
+
+        echo paginate_links(array(
+            'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+            'format' => '?paged=%#%',
+            'current' => $current_page,
+            'total' => $total_pages,
+            'prev_text'          => __('«'),
+            'next_text'          => __('»'),
+        ));
+    }
+}
