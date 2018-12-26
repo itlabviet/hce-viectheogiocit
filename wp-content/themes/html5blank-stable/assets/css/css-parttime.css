@@ -1,31 +1,32 @@
-#parttime{
+#tem-parttime,#post-parttime{
 	margin-top: 100px;
 }
 
-#parttime .parttime img{
+#tem-parttime .parttime img{
 	padding-right: 15px ;
     float: left;
 }
 
-#parttime .sidebar{
+#tem-parttime .sidebar,#post-parttime .sidebar{
 	padding-top: 30px;
 }
 
-#parttime .search{
+#tem-parttime .search, #post-parttime .search{
 	width: 100%
 }
 
-#parttime .search input{
+#tem-parttime .search input, #post-parttime .search input{
 	width: 70%;
     float: left;
     height: auto;
 }
 
-#parttime .search button{
+#tem-parttime .search button, #post-parttime .search button{
 	float: left;
 	color: yellow;
 	text-transform: uppercase;
 	font-weight: bold;
     background-color: rgba(37,66,117,.9);
 }
+
 

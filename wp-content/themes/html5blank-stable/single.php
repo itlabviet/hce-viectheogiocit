@@ -2,7 +2,7 @@
 
 	<main role="main">
 	<!-- section -->
-		<div class="container" id="parttime">
+		<div class="container" id="post-parttime">
 			<div class="row">
 				<div class="col-8">
 
@@ -13,19 +13,20 @@
 							<!-- article -->
 							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-								<!-- post thumbnail -->
-								<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-									<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-										<?php the_post_thumbnail(); // Fullsize image for the single post ?>
-									</a>
-								<?php endif; ?>
-								<!-- /post thumbnail -->
-
 								<!-- post title -->
 								<h1>
 									<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 								</h1>
 								<!-- /post title -->
+
+								<!-- post thumbnail -->
+								<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
+									<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+										<?php the_post_thumbnail(); // Fullsize image for the single post ?>
+										<br>
+									</a>
+								<?php endif; ?>
+								<!-- /post thumbnail -->
 
 								<!-- post details -->
 								<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>

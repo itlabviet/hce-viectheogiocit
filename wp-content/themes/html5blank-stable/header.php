@@ -117,15 +117,15 @@
 					      <li class="nav-item">
 					        <a class="nav-link" href="#">Đăng nhập</a>
 					      </li> -->
-					    <?php  
-							$menu_items = wp_get_nav_menu_items("Main menu");
-							// thiếu active menu
-							foreach ($menu_items as $menu) {
-							?>
-							<li class="nav-item" <?php echo "active" ?> >
-					        	<a class="nav-link" href="<?php echo $menu->url ?>"><?php echo $menu->title ?><span class="sr-only">(current)</span></a>
-					      	</li>	
-						<?php } ?> 
+						    <?php  
+								$menu_items = wp_get_nav_menu_items("Main menu");
+								// thiếu active menu
+								foreach ($menu_items as $menu) {
+								?>
+								<li class="nav-item" >
+						        	<a class="nav-link" href="<?php echo $menu->url ?>"><?php echo $menu->title ?><span class="sr-only">(current)</span></a>
+						      	</li>	
+							<?php } ?> 
 
 					     <!--  <li class="nav-item dropdown">
 					        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

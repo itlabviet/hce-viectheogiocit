@@ -44,6 +44,7 @@ body{
 }
 
 #menu_fix nav{
+  box-shadow: 5px 3px 5px grey;
   margin-top: 30px;
   background-color: white;
 }

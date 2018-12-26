@@ -6,7 +6,7 @@
  get_header(); ?>
 
 	<main role="main" >
-		<div class="container" id="parttime">
+		<div class="container" id="tem-parttime">
 			<div class="row">
 				<div class="col-4">
 					<!-- Side bar -->
