@@ -5,18 +5,18 @@
 
  get_header(); ?>
 
-	<main role="main">
-
-		<div class="container">
+	<main role="main" >
+		<div class="container" id="parttime">
 			<div class="row">
-				<div class="col-3">
+				<div class="col-4">
 					<!-- Side bar -->
-
+					<!-- Search -->
+						<?php get_sidebar(); ?>
 				</div>
 
-				<div class="col-9 ">
+				<div class="col-8 ">
 					<!-- section -->
-					<section id="main-patime">
+					<section>
 
 						<h1><?php _e( 'Việc làm theo giờ', 'html5blank' ); ?></h1>
 
@@ -25,8 +25,7 @@
 							<button type="submit">Submit</button>
 						</form> -->
 
-						<!-- Search -->
-						<?php get_sidebar(); ?>
+						
 						<!-- Truy vấn cho tìm kiếm -->
 						<?php
 							$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;

@@ -1,3 +1,31 @@
-#main-patime{
+#parttime{
 	margin-top: 100px;
 }
+
+#parttime .parttime img{
+	padding-right: 15px ;
+    float: left;
+}
+
+#parttime .sidebar{
+	padding-top: 30px;
+}
+
+#parttime .search{
+	width: 100%
+}
+
+#parttime .search input{
+	width: 70%;
+    float: left;
+    height: auto;
+}
+
+#parttime .search button{
+	float: left;
+	color: yellow;
+	text-transform: uppercase;
+	font-weight: bold;
+    background-color: rgba(37,66,117,.9);
+}
+
