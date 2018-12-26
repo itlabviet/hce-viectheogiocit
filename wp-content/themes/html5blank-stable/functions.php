@@ -451,5 +451,12 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 
 require_once('assets/functions.php');
 
+if( !class_exists( 'ReduxFramewrk' ) ) {
+require_once( dirname( __FILE__ ) . '/ReduxCore/framework.php' );
+}
+if( !isset( $redux_demo ) ) {
+require_once( dirname( __FILE__ ) . '/ReduxCore/sample-config.php');
+}
+
 ?>
 
