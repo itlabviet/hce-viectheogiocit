@@ -1,7 +1,7 @@
 	<footer>
 		<div class="container">
 	      <div class="copyright">
-	        <a href="https://www.facebook.com/vieclamtheogiocit/"><h4><strong>Bản quyền thuộc về C-IT</strong></h4></a> 
+	        <a href="https://www.facebook.com/vieclamtheogiocit/"><h5><strong>Bản quyền thuộc về C-IT</strong></h5></a> 
 	      </div>
 	    </div>
 		
@@ -37,13 +37,16 @@
 			else
 			{
 				$("#menu_fix nav").css("margin-top", "30px");
-			}	
+			}	 
 
 	  });
 	});
 </script>
 
-
+<!-- Sub Menu -->
+<script>
+  $('.sub-menu').addClass('dropdown-menu'); 
+</script>
 <!-- ================== slide member ( slick ) ====================== -->
 <script type="text/javascript">
     $(document).on('ready', function() {

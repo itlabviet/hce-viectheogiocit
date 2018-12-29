@@ -360,3 +360,31 @@ footer .copyright a{
   margin-bottom: 10px;
 }
 
+/*============Author===============*/
+.author-wrap{
+  background-color: #f2f5f8;
+    padding: 15px;
+    border-radius: 5px;
+}
+.author-img{
+  text-align: center;
+
+}
+/*===============Comment============*/
+
+.comment{
+    border-bottom: 1px solid #dfdfdf;
+    border-top: 1px solid #dfdfdf;
+
+}
+
+.comment .children li .comment-body{
+      margin-left: 45px;
+}
+.comment-body{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.comment img{
+  float: right;
+}

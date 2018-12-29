@@ -327,7 +327,7 @@ function html5blankcomments($comment, $args, $depth)
 
 	<?php comment_text() ?>
 
-	<div class="reply">
+	<div class="reply" >
 	<?php comment_reply_link(array_merge( $args, array('add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
 	</div>
 	<?php if ( 'div' != $args['style'] ) : ?>
@@ -448,8 +448,25 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 {
     return '<h2>' . $content . '</h2>';
 }
-
+/*===================Add-Function==============*/
 require_once('assets/functions.php');
+/*=================Lib=======================*/
+// Register Custom Navigation Walker
+require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+if ( ! file_exists( get_template_directory() . '/class-wp-bootstrap-navwalker.php' ) ) {
+    // file does not exist... return an error.
+    return new WP_Error( 'class-wp-bootstrap-navwalker-missing', __( 'It appears the class-wp-bootstrap-navwalker.php file may be missing.', 'wp-bootstrap-navwalker' ) );
+} else {
+    // file exists... require it.
+    require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+}
+register_nav_menus( array(
+    'primary' => __( 'Primary Menu', 'THEMENAME' ),
+) );
+
+
+
+/*=============ReduxFramewrk==============*/
 
 if( !class_exists( 'ReduxFramewrk' ) ) {
 require_once( dirname( __FILE__ ) . '/ReduxCore/framework.php' );
@@ -458,5 +475,5 @@ if( !isset( $redux_demo ) ) {
 require_once( dirname( __FILE__ ) . '/ReduxCore/sample-config.php');
 }
 
-?>
+?> 
 

@@ -82,7 +82,7 @@ function the_titlesmall($before = '', $after = '', $echo = true, $length = false
 }
 
 
-// pagination
+//================= pagination =================
 function pagination_bar( $custom_query ) {
 
     $total_pages = $custom_query->max_num_pages;

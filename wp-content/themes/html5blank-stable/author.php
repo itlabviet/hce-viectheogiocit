@@ -2,76 +2,87 @@
 
 	<main role="main">
 		<!-- section -->
-		<section>
+		<div class="container" id="tem-parttime">
+			<div class="row">
+				<div class="col-4">
+					<?php get_sidebar(); ?>
+				</div>
 
-		<?php if (have_posts()): the_post(); ?>
+				<div class="col-8">
+					<section>
 
-			<h1><?php _e( 'Author Archives for ', 'html5blank' ); echo get_the_author(); ?></h1>
+						<?php if (have_posts()): the_post(); ?>
 
-		<?php if ( get_the_author_meta('description')) : ?>
+							<h1><?php _e( 'Các bài đăng của ', 'html5blank' ); echo get_the_author(); ?></h1>
 
-		<?php echo get_avatar(get_the_author_meta('user_email')); ?>
+						<?php if ( get_the_author_meta('description')) : ?>
 
-			<h2><?php _e( 'About ', 'html5blank' ); echo get_the_author() ; ?></h2>
+						<?php echo get_avatar(get_the_author_meta('user_email')); ?>
 
-			<?php echo wpautop( get_the_author_meta('description') ); ?>
+							<h2><?php _e( 'Về ', 'html5blank' ); echo get_the_author() ; ?></h2>
 
-		<?php endif; ?>
+							<?php echo wpautop( get_the_author_meta('description') ); ?>
 
-		<?php rewind_posts(); while (have_posts()) : the_post(); ?>
+						<?php endif; ?>
 
-			<!-- article -->
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+						<?php rewind_posts(); while (have_posts()) : the_post(); ?>
 
-				<!-- post thumbnail -->
-				<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-						<?php the_post_thumbnail(array(120,120)); // Declare pixel size you need inside the array ?>
-					</a>
-				<?php endif; ?>
-				<!-- /post thumbnail -->
+							<!-- article -->
+							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-				<!-- post title -->
-				<h2>
-					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-				</h2>
-				<!-- /Post title -->
+								<!-- post thumbnail -->
+								<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
+									<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+										<?php the_post_thumbnail(array(120,120)); // Declare pixel size you need inside the array ?>
+									</a>
+								<?php endif; ?>
+								<!-- /post thumbnail -->
 
-				<!-- post details -->
-				<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
-				<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-				<span class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
-				<!-- /post details -->
+								<!-- post title -->
+								<h2>
+									<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+								</h2>
+								<!-- /Post title -->
 
-				<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
+								<!-- post details -->
+								<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
+								<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
+								<span class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
+								<!-- /post details -->
 
-				<br class="clear">
+								<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
 
-				<?php edit_post_link(); ?>
+								<br class="clear">
 
-			</article>
-			<!-- /article -->
+								<?php edit_post_link(); ?>
 
-		<?php endwhile; ?>
+							</article>
+							<!-- /article -->
 
-		<?php else: ?>
+						<?php endwhile; ?>
 
-			<!-- article -->
-			<article>
+						<?php else: ?>
 
-				<h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
+							<!-- article -->
+							<article>
 
-			</article>
-			<!-- /article -->
+								<h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
 
-		<?php endif; ?>
+							</article>
+							<!-- /article -->
 
-			<?php get_template_part('pagination'); ?>
+						<?php endif; ?>
 
-		</section>
-		<!-- /section -->
+							<?php get_template_part('pagination'); ?>
+
+					</section>
+					<!-- /section -->
+				</div>
+			</div>
+		</div>
+		
 	</main>
 
-<?php get_sidebar(); ?>
+
 
 <?php get_footer(); ?>

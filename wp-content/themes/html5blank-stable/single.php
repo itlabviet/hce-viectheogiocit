@@ -38,11 +38,30 @@
 
 								<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
 
-								<p><?php _e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
-
-								<p><?php _e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>
-
+								<p><?php _e( 'Danh mục: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
+								
 								<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
+
+								<div class="author-wrap media">
+									<div class="media-body">
+										<p><?php _e( 'Bài viết được đăng bởi ', 'html5blank' );?> <a href="<?php the_author_meta('user_url'); ?>" target="_blank" class="ext-link" title="Ghé thăm website của <?php the_author_meta('user_login') ?>"><?php the_author(); ?> </a></p>
+
+										<div class="author-descrip">
+											<?php the_author_meta('description') ?>
+										</div>
+
+										<a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>">Xem bài của <?php the_author_meta('user_login') ?></a>
+									</div>
+									
+									<div class="author-img align-self-center" >
+										<div>
+											<?php echo get_avatar(get_the_author_meta("ID"),100); ?>
+										</div>
+										<p><?php the_author(); ?></p>				
+									</div>
+
+								</div>
+
 
 								<?php comments_template(); ?>
 

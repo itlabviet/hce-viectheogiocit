@@ -6,11 +6,11 @@
 	padding-right: 15px ;
     float: left;
 }
-
+/*==================Side Bar==============*/
 #tem-parttime .sidebar,#post-parttime .sidebar{
 	padding-top: 30px;
 }
-
+/*==========Search==========*/
 #tem-parttime .search, #post-parttime .search{
 	width: 100%
 }

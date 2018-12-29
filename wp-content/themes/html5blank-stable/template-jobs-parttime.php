@@ -9,9 +9,11 @@
 		<div class="container" id="tem-parttime">
 			<div class="row">
 				<div class="col-4">
-					<!-- Side bar -->
+					<!-- Side bar --> 
+					
 					<!-- Search -->
 						<?php get_sidebar(); ?>
+
 				</div>
 
 				<div class="col-8 ">
@@ -19,13 +21,6 @@
 					<section>
 
 						<h1><?php _e( 'Việc làm theo giờ', 'html5blank' ); ?></h1>
-
-						<!-- <form method="GET" action="">
-							<input type="text" name="search_content" class="search_content">
-							<button type="submit">Submit</button>
-						</form> -->
-
-						
 						<!-- Truy vấn cho tìm kiếm -->
 						<?php
 							$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
@@ -37,11 +32,12 @@
 
 							if ( isset($_GET['search_content']) ) {
 								$args['s'] = $_GET['search_content'];
+						?>
+						<h3><?php echo sprintf( __( '%s Search Results for ', 'html5blank' ), $wp_query->found_posts ); echo get_search_query(); ?></h3>
 
-							}
-						 	
+						<?php
+							}	 	
 						 	$my_posts = new WP_query( $args );
-
 						?>
 
 						<!-- Vòng lặp -->
