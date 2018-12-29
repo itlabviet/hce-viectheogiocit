@@ -49,6 +49,7 @@ function custom_post_type() {
         'exclude_from_search' => false,
         'publicly_queryable'  => true,
         'capability_type'     => 'page',
+        'taxonomies'          => array('topics', 'category' ),
     );
      
     // Registering your Custom Post Type
@@ -63,6 +64,7 @@ function custom_post_type() {
  
 add_action( 'init', 'custom_post_type', 0 );
 
+/*=====================Check title length==================== */
 // filer title-limit WordPress title length
 function the_titlesmall($before = '', $after = '', $echo = true, $length = false) { $title = get_the_title();
     if( strlen($title) <= $length )
